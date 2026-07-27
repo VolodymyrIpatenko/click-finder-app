@@ -1,0 +1,57 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  font-size: $font-size-base;
+  color: $text-dark;
+  background: $white;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: $container-max;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+	list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+	height: auto;
+}

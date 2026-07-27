@@ -1,0 +1,33 @@
+// {
+//   "env": {
+//     "browser": true,
+//     "es2021": true
+//   },
+//   "extends": [
+//     "react-app",
+//     "plugin:@typescript-eslint/recommended",
+//     "plugin:prettier/recommended"
+//   ],
+//   "parser": "@typescript-eslint/parser",
+//   "plugins": [
+//     "@typescript-eslint",
+//     "prettier"
+//   ],
+//   "rules": {
+//     "prettier/prettier": "warn"
+//   }
+// }
+
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "react-app",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "warn"
+  }
+}

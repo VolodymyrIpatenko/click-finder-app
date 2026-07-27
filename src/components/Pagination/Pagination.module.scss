@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+
+  &__btn {
+    min-width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    border: 1.5px solid $border;
+    background: $white;
+    color: $text-dark;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover:not(:disabled):not(&--active):not(&--ellipsis) {
+      background: rgba($primary, 0.05);
+    }
+
+    &--active {
+      background-color: rgba(58, 128, 186, 1);
+      color: $white;
+      border-color: rgba(58, 128, 186, 1);
+      font-weight: 500;
+    }
+
+    &--ellipsis {
+      border: none;
+      cursor: default;
+    }
+
+    &--right {
+      background: none;
+      border: none;
+      background-image: url('../../../public/images/pagination-arrow.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--left {
+      cursor: pointer;
+      transform: rotate(-180deg);
+      background: none;
+      border: none;
+      background-image: url('../../../public/images/pagination-arrow.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &:disabled {
+      opacity: 0.1;
+      cursor: not-allowed;
+    }
+  }
+}

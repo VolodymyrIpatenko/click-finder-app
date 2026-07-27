@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+
+.stats {
+  min-height: 100vh;
+  background: $bg-light;
+  display: flex;
+  flex-direction: column;
+  &__arrow {
+    background-image: url('../../../public/images/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+  }
+  &__statistics__link {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    color: rgba(58, 128, 186, 1);
+  }
+  &__statistics__link_back {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(204, 204, 204, 1);
+  }
+
+  &__main {
+    flex: 1;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+
+  &__nav_list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 32px;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(26, 26, 26, 1);
+    margin-bottom: 16px;
+  }
+}

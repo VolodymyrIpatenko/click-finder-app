@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+body {
+  position: relative;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 60px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  &--stats {
+    background: rgba(28, 59, 85, 1);
+    position: relative;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+  }
+
+  &__logo {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    color: $white;
+  }
+
+  &__copy {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &__rights {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+  }
+}
