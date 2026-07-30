@@ -1,50 +1,19 @@
-// {
-//   "name": "clickfinder",
-//   "version": "0.1.0",
-//   "private": true,
-//   "eslint.format.enable": true,
-//   "dependencies": {
-//     "@types/node": "^16.18.126",
-//     "modern-normalize": "^3.0.1",
-//     "react": "^19.2.7",
-//     "react-dom": "^19.2.7",
-//     "react-router-dom": "^6.30.4",
-//     "sass": "^1.101.0",
-//     "typescript": "^4.9.5"
-//   },
-//   "scripts": {
-//     "lint": "eslint . --ext ts,tsx --max-warnings 0",
-//     "format": "prettier --write .",
-//     "start": "react-scripts start",
-//     "build": "react-scripts build",
-//     "test": "react-scripts test",
-//     "eject": "react-scripts eject"
-//   },
-//   "browserslist": {
-//     "production": [
-//       ">0.2%",
-//       "not dead",
-//       "not op_mini all"
-//     ],
-//     "development": [
-//       "last 1 chrome version",
-//       "last 1 firefox version",
-//       "last 1 safari version"
-//     ]
-//   },
-//   "devDependencies": {
-//     "@types/react": "^18.3.31",
-//     "@types/react-dom": "^18.3.7",
-//     "@typescript-eslint/eslint-plugin": "^8.65.0",
-//     "@typescript-eslint/parser": "^8.65.0",
-//     "@vitejs/plugin-react": "^6.0.4",
-//     "eslint": "^10.7.0",
-//     "eslint-config-prettier": "^10.1.8",
-//     "eslint-plugin-prettier": "^5.5.6",
-//     "eslint-plugin-react": "^7.37.5",
-//     "eslint-plugin-react-hooks": "^7.1.1",
-//     "prettier": "^3.9.6",
-//     "vite": "^8.1.5"
-//   }
-// }
+# Click Finder Project
 
+
+### [Site link](https://click-finder-app.vercel.app/)
+
+Adaptive layout for Desktop and Responsive Layout for tablet and mobile 
+
+### The tech stack is:
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [Flexbox](https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout)
+- [Sass (Scss)](https://sass-lang.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://react.dev/)
+
+### Author
+
+- Volodymyr Ipatenko
