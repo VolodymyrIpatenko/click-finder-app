@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import styles from './Newsletter.module.scss';
+import './index.scss';
 
-const Newsletter: React.FC = () => {
+export const Newsletter: React.FC = () => {
   const [email, setEmail] = useState('');
 
   const handleSubscribe = () => {
@@ -12,22 +12,19 @@ const Newsletter: React.FC = () => {
   };
 
   return (
-    <section className={styles.newsletter}>
+    <section className="newsletter">
       <div className="container">
-        <div className={styles.newsletter__inner}>
-          <div className={styles.newsletter__form}>
+        <div className="newsletter__inner">
+          <div className="newsletter__form">
             <input
-              className={styles.newsletter__input}
+              className="newsletter__input"
               type="email"
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <button
-              className={styles.newsletter__btn}
-              onClick={handleSubscribe}
-            >
+            <button className="newsletter__btn" onClick={handleSubscribe}>
               Subscribe
             </button>
           </div>
@@ -36,5 +33,3 @@ const Newsletter: React.FC = () => {
     </section>
   );
 };
-
-export default Newsletter;

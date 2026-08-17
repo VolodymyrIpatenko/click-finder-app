@@ -1,10 +1,9 @@
-
-@import '../../styles/variables';
+@import "../../../styles/variables";
 
 .table-wrapper {
   overflow-x: auto;
   border-radius: $radius-sm;
-  min-height: 520px; 
+  min-height: 520px;
 }
 
 .table {
@@ -19,7 +18,7 @@
 
   th {
     padding: 11px 0;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
@@ -30,6 +29,7 @@
       border-top-left-radius: 16px;
       width: 64px;
     }
+
     &:last-child {
       border-top-right-radius: 16px;
     }

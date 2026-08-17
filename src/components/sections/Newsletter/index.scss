@@ -1,7 +1,7 @@
-@import '../../styles/variables';
+@import "../../../styles/variables";
 
 .newsletter {
-  background-image: url('../../../public/images/subscribe-bg.png');
+  background-image: url("../../../public/images/subscribe-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 60px 0 100px;
@@ -28,9 +28,14 @@
 
   &__btn {
     background: #3b7cbf;
-    color: white;
+    color: $white;
     padding: 0 30px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background: darken(#3b7cbf, 5%);
+    }
   }
 }

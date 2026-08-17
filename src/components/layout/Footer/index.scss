@@ -1,5 +1,5 @@
-@import '../../styles/variables';
 
+@import "../../../styles/variables";
 
 .footer {
   bottom: 0;
@@ -10,6 +10,7 @@
   min-height: 60px;
   padding-top: 14px;
   padding-bottom: 14px;
+
   &--stats {
     background: rgba(28, 59, 85, 1);
     position: relative;
@@ -27,12 +28,11 @@
     font-size: 32px;
     line-height: 100%;
     letter-spacing: 0%;
-
     color: $white;
   }
 
   &__copy {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 142%;
@@ -42,10 +42,9 @@
   }
 
   &__rights {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 16px;
-
     line-height: 142%;
     letter-spacing: 0%;
     text-align: center;

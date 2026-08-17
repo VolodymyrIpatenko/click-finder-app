@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home';
-import Stats from './pages/Stats/Stats';
+import Home from './pages/Home';
+import { Stats } from './pages/Stats';
 import './styles/global.scss';
 
 const App: React.FC = () => {

@@ -1,10 +1,11 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .stats {
   min-height: 100vh;
   background: $bg-light;
   display: flex;
   flex-direction: column;
+
   &__arrow {
     background-image: url('../../../public/images/arrow.png');
     background-repeat: no-repeat;
@@ -12,17 +13,18 @@
     width: 20px;
     height: 20px;
   }
+
   &__statistics__link {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
-
     color: rgba(58, 128, 186, 1);
   }
+
   &__statistics__link_back {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
@@ -44,10 +46,9 @@
   }
 
   &__title {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 32px;
-
     line-height: 100%;
     letter-spacing: 0%;
     color: rgba(26, 26, 26, 1);

@@ -1,32 +1,31 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Hero.module.scss';
+import './index.scss';
 
-const Hero: React.FC = () => {
+export const Hero: React.FC = () => {
   return (
-    <section className={styles.hero}>
+    <section className="hero">
       <div className="container">
-        <div className={styles.hero__inner}>
-          <div className={styles.hero__content}>
-            <h1 className={styles.hero__title}>
+        <div className="hero__inner">
+          <div className="hero__content">
+            <h1 className="hero__title">
               <b>Brainstorming</b> for
               <br />
               desired perfect Usability
             </h1>
-            <p className={styles.hero__subtitle}>
+            <p className="hero__subtitle">
               Our design projects are fresh and simple and will benefit your
               business greatly. Learn more about our work!
             </p>
-            <Link to="/stats" className={styles.hero__link}>
+            <Link to="/stats" className="hero__link">
               Views Stats
             </Link>
           </div>
 
-          <img className={styles.hero__img} src="/images/iPhoneX.png" alt="" />
+          <img className="hero__img" src="/images/iPhoneX.png" alt="" />
         </div>
       </div>
     </section>
   );
 };
-
-export default Hero;

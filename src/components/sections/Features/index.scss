@@ -1,4 +1,5 @@
-@import '../../styles/variables';
+
+@import "../../../styles/variables";
 
 .features {
   padding: 80px 0 60px;
@@ -6,9 +7,8 @@
 
   &__title {
     max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 24px;
-    font-family: Montserrat;
+    margin: 0 auto 24px;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 100%;
@@ -17,7 +17,7 @@
     color: rgba(26, 26, 26, 1);
 
     span {
-      font-family: Montserrat;
+      font-family: Montserrat, sans-serif;
       font-weight: 700;
       font-size: 32px;
       line-height: 100%;
@@ -29,9 +29,8 @@
 
   &__sub {
     max-width: 780px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    font-family: Montserrat;
+    margin: 0 auto 40px;
+    font-family: Montserrat, sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 142%;
@@ -45,7 +44,7 @@
     gap: 20px;
 
     @media (max-width: 768px) {
-      grid-template-columns: 1fr;
+      flex-direction: column;
     }
   }
 
@@ -54,14 +53,38 @@
     border-radius: $radius-md;
     padding: 36px 28px;
     text-align: center;
-    transition:
-      box-shadow 0.2s,
-      transform 0.2s;
+    transition: box-shadow 0.2s, transform 0.2s;
     background: $white;
 
     &:hover {
       box-shadow: $shadow-card;
       transform: translateY(-4px);
+    }
+
+    &_title {
+      margin-top: 40px;
+      margin-bottom: 16px;
+      font-family: Montserrat, sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: rgba(26, 26, 26, 1);
+    }
+
+    &_img {
+      margin: 0 auto;
+    }
+
+    &_desc {
+      font-family: Montserrat, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 142%;
+      letter-spacing: 0%;
+      text-align: center;
+      color: rgba(126, 126, 126, 1);
     }
   }
 
@@ -82,31 +105,5 @@
       stroke: $white;
       stroke-width: 1.8;
     }
-  }
-
-  &__card_title {
-    margin-bottom: 16px;
-    margin-top: 40px;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: rgba(26, 26, 26, 1);
-  }
-  &__card_img {
-    margin: 0 auto;
-  }
-
-  &__card_desc {
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 142%;
-    letter-spacing: 0%;
-    text-align: center;
-
-    color: rgba(126, 126, 126, 1);
   }
 }

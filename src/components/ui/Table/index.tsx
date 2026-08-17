@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from './Table.module.scss';
-import type { User } from '../../types/user';
+import type { User } from '../../../types/user';
+import './index.scss';
 
 type TableProps = {
   users: User[];
 };
 
-const Table: React.FC<TableProps> = ({ users }) => {
+export const Table: React.FC<TableProps> = ({ users }) => {
   return (
-    <div className={styles['table-wrapper']}>
-      <table className={styles.table}>
+    <div className="table-wrapper">
+      <table className="table">
         <thead>
           <tr>
             <th>Id</th>
@@ -41,5 +41,3 @@ const Table: React.FC<TableProps> = ({ users }) => {
     </div>
   );
 };
-
-export default Table;
