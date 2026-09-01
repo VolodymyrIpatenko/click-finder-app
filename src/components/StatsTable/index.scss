@@ -1,0 +1,170 @@
+@use '@/common/scss/variables.scss' as *;
+
+.table-holder {
+  width: 100%;
+  margin-bottom: 23px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  background-color: $white-color;
+  border-radius: 10px;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.stats-table {
+  width: 1180px;
+  min-width: 1180px;
+
+  margin: 0 auto;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  table-layout: fixed;
+
+  font-size: 14px;
+
+  th,
+  td {
+    overflow: hidden;
+
+    border-left: 1px solid $white-color;
+
+    text-align: center;
+  }
+
+  th {
+    height: 49px;
+    padding: 11px 0;
+
+    background-color: $color-blue;
+    color: $white-color;
+
+    font-size: 16px;
+    font-weight: $regular-weight;
+    line-height: 27px;
+
+    white-space: nowrap;
+
+    &:first-child {
+      width: 64px;
+      border-top-left-radius: 10px;
+    }
+
+    &:nth-child(2) {
+      width: 151px;
+    }
+
+    &:nth-child(3) {
+      width: 133px;
+    }
+
+    &:nth-child(4) {
+      width: 239px;
+
+      overflow: hidden;
+
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &:nth-child(5) {
+      width: 112px;
+    }
+
+    &:nth-child(6) {
+      width: 147px;
+    }
+
+    &:nth-child(7) {
+      width: 153px;
+    }
+
+    &:last-child {
+      width: 181px;
+      border-top-right-radius: 10px;
+    }
+  }
+
+  td {
+    max-width: 239px;
+
+    padding: 6.25px 0;
+
+    overflow: hidden;
+
+    color: #4a4a4a;
+    background-color: $white-color;
+
+    font-size: 16px;
+    font-weight: $regular-weight;
+    line-height: 19.5px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &:nth-child(4) {
+      padding-inline: 24px;
+
+      text-align: start;
+    }
+  }
+
+  tr:nth-child(even) td {
+    background-color: $grey-color-third;
+  }
+
+  tr:nth-child(odd) td {
+    background-color: $grey-color-alternate;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+
+    &:first-child {
+      border-bottom-left-radius: 10px;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) and (max-width: 1179px) {
+    margin: 0;
+
+    th,
+    td {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0;
+
+    th {
+      height: 45px;
+      padding: 9px 0;
+
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    td {
+      padding: 6px 0;
+
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    td:nth-child(4) {
+      padding-inline: 16px;
+    }
+  }
+}

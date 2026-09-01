@@ -1,0 +1,29 @@
+@use '@/common/scss/variables.scss' as *;
+@use '@/common/scss/breakpoints.scss' as *;
+@use '@/common/scss/common.scss' as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: $regular-weight;
+  font-size: 16px;
+  color: $white-color;
+}
+
+body {
+  padding: 0;
+}
+
+.button {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
